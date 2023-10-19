@@ -1,1 +1,84 @@
+*{
+font-family: 'Gabarito', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+overflow-x: hidden;
+}
 
+.menubtn{
+    display:none
+  }
+.closebtn{
+    display: none;
+}
+.ad{
+    border: 1px solid black;
+    width: 80vw;
+    height: 10em;
+    margin: 0 auto;
+    margin-top: 10px;
+    overflow-y: hidden;
+}
+.image{
+    border: solid 1px black;
+    width: 10em;
+}
+img{
+    width: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightgreen;
+    }
+    section.mobileheader {
+        width: 30vw;
+        display: inline-block;
+    }
+    .menubtn{
+        font-size:30px;cursor:pointer;
+        display:block;
+        margin: 3% 5%;
+    }
+    .zoekbalk{
+        display: inline-block;
+        width: 50vw;
+        margin: 0.5em auto;
+    }
+    .liked{
+        display: inline-block;
+        width: 10vw;
+        margin: 0.5em auto;
+    }
+    .sideMenu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #9adbb3;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 20px;
+      }
+      .sideMenu a {
+        padding: 0.5em 1em 0.5em 1em;
+        text-decoration: none;
+        font-size: 1.3em;
+        color: #225035;
+        display: block;
+        transition: 0.3s;
+      }
+      .sideMenu a:hover {
+        color: ghostwhite;
+      }
+      .ad{
+        border: 1px solid black;
+        width: 90vw;
+        height: 9em;
+        margin: 0 auto;
+        margin-top: 10px;
+        overflow-y: hidden;
+    }
+  }
