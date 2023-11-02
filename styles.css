@@ -36,9 +36,15 @@ img{
   overflow: hidden;
   width: 40vw;
   white-space: normal;
+  height: 80%;
 }
 .articleButton{
-  margin: 10px 0 40px 50vw;
+margin-left: 11em;
+text-align: center;
+text-decoration: none;
+border-radius: 15px;
+width: 10em;
+background: rgb(169, 230, 169);
 }
 .laptopHeader{
   background: lightgreen;
@@ -54,7 +60,48 @@ img{
   margin: 10px auto;
   margin-left: 40vw;
 }
+.imglink{
+  width: inherit;
+  pointer-events: none;
+}
+nav{
+  background: rgb(159, 226, 159);
+  width: 15vw;
+  text-align: end;
+  position: absolute;
+  padding-bottom: 20px;
+  top: 16vh;
+  position: fixed;
+}
+.h3{
+  text-align: center;
+}
+input{
+  margin-bottom: 15px;
+}
+#toevoegen{
+  text-align: center;
+  margin: 10vh auto;
+  width: 50vw;
+  background: ghostwhite;
+}
+.achtergrond{
+  background: rgb(108,255,0);
+background: linear-gradient(138deg, rgba(108,255,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+.terug{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  border: 1px solid black;
+  text-decoration: none;
+}
 
+@media only screen and (max-width: 740px) {
+  nav{
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 600px) {
     body {
@@ -113,5 +160,12 @@ img{
     }
     .articleButton{
       display: none;
+    }
+    .imglink{
+      width: inherit;
+      pointer-events: all;
+    }
+    .info{
+      height: 100%;
     }
   }
