@@ -4,76 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventplaats</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="./js.js" defer></script>
 </head>
-<body>
+<body id="grid">
     <header>
-
-        <section class="mobileHeader laptopHeader">
-            <div id="sideMenu" class="sideMenu">
-                <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
-                <a href="index.html">Home</a>
-                <a href="#">Q&A</a>
-                <a href="#">Sponsors</a>
-                <a href="#">Contact</a>
-                <a href="add.html">Toevoegen</a>
-                <a href="#">Aanmelden</a>
-                <button href="#" name="liked" class="collectedLikes">❤️</button>
-              </div>
-            <span class="menubtn" onclick="openMenu()">&#9776; Menu</span>
-        </section>
-
-        <section class="zoeken">
-        <form action="#">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit">zoeken</button>
-          </form>
-        </section>
-
+        <div class="menu">
+            <ul class="navmenu">
+                <a href="#" class="menu-item">home</a>
+                <a href="#" class="menu-item">over ons</a>
+                <a href="#" class="menu-item">toevoegen</a>
+                <a href="#" class="menu-item">contact</a>
+            </ul>
+        </div>
     </header>
-    <main>
-        <section class="ad">
-            <div class="image"><a class="imglink" href="moreabt.html"><img alt="Plaatje van de test, test, test..." src="./assets/test.jpg"></a></div>
-            <div class="info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-            <a href="moreabt.html"><div class="articleButton">
-                lees meer
-            </div></a>
-        </section>
-        <section class="ad">
-            <div class="image"><a class="imglink" href="moreabt.html"><img alt="Plaatje van de test, test, test..." src="./assets/test.jpg"></a></div>
-            <div class="info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-            <a href="moreabt.html"><div class="articleButton">
-                lees meer
-            </div></a>
-        </section>
-        <section class="ad">
-            <div class="image"><a class="imglink" href="moreabt.html"><img alt="Plaatje van de test, test, test..." src="./assets/test.jpg"></a></div>
-            <div class="info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-            <a href="moreabt.html"><div class="articleButton">
-                lees meer
-            </div></a>
-        </section>
-        <section class="ad">
-            <div class="image"><a class="imglink" href="moreabt.html"><img alt="Plaatje van de test, test, test..." src="./assets/test.jpg"></a></div>
-            <div class="info">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
-            <a href="moreabt.html"><div class="articleButton">
-                lees meer
-            </div></a>
-        </section>
-    </main>
-    <nav class="filters">
-        <form action="">
-            <h3 class="h3">tags</h3>
-            <label>Muziek</label>
-            <input type="checkbox" name="muziek" class="tags">
-            <br>
-            <label>Evenement</label>
-            <input type="checkbox" name="event" class="tags">
-        </form>
+    <nav>
+        <section class="filterMenu">
+            <div id="sideMenu" class="sideMenu">
+                <a class="closebtn material-symbols-outlined" id="closeMenu">close</a>
+                <form>
+                    <label><h3>Filters:</h3></label>
+                    <p>Events(): <span><input type="checkbox" ></span></p>
+                    <p>hulp gezocht(): <span><input type="checkbox" ></span></p>
+                    <p>hulp aanbieder(): <span><input type="checkbox" ></span></p>
+                    <p>muziek(): <span><input type="checkbox" ></span></p>
+                    <p>museum(): <span><input type="checkbox" ></span></p>
+                </form>
+              </div>
+              <span class="material-symbols-outlined" id="openMenu">
+                filter_list
+                </span>
+          </section>
     </nav>
+    <main>
+        <article>
+            <a href="#" class="imglink"></a><img class="images" src="./assets/test.jpg" alt="plaatje van test test test"></a>
+            <div class="tekst"> <blockquote><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></blockquote></div>
+            <a href="#" class="articleButton" name="articleButton">Lees meer</a>
+        </article>
+        <article>
+            <a href="#" class="imglink"></a><img class="images" src="./assets/test.jpg" alt="plaatje van test test test"></a>
+            <div class="tekst"><blockquote><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></blockquote></div>
+            <a href="#" class="articleButton" name="articleButton">Lees meer</a>
+        </article>
+    </main>
+    <footer>
+        <b>All rights deserved 2023</b>
+        <p>email</p>
+    </footer>
 </body>
 </html>
