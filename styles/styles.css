@@ -102,6 +102,9 @@ footer{
   justify-content: center;
   list-style: var(--decoratie-uit);
 }
+a.imglink {
+  margin: auto;
+}
 
 article{
   display: flex;
@@ -133,7 +136,7 @@ article:hover{
 
 .images{
   height: 14.5rem;
-  margin: var(--margin-centered);
+  margin: 0 auto;
   width: 80vw;
   max-width: 400px;
 }
@@ -232,7 +235,7 @@ form{
   .card-info{
     max-width: 50vw;
     margin: var(--margin-centered);
-    margin-top: 0.5rem ;
+    margin-top: 1rem ;
 
     & img{
       width: 50vw;
