@@ -13,7 +13,7 @@
   --decoratie-line: underline;
 
   /* positions */
-  --centered: 0 auto;
+  --margin-centered: 0 auto;
   --text-center: center;
 }
 
@@ -29,7 +29,7 @@ body{
 
 h1,h2,h3{
   text-align: var(--text-center);
-  margin: var(--centered);
+  margin: var(--margin-centered);
   margin-bottom: 1rem;
 }
 
@@ -127,7 +127,7 @@ article{
 
 .images{
   height: 14.5rem;
-  margin: var(--centered);
+  margin: var(--margin-centered);
   width: 80vw;
   max-width: 400px;
   margin-top: 2em;
@@ -171,8 +171,14 @@ article{
 }
 
 .about-us{
-  margin: 0 auto;
+  margin: var(--margin-centered);
   max-width: 80vw;
+}
+
+form{
+  text-decoration: var(--text-center);
+  margin: var(--margin-centered);
+  width: 35vw;
 }
 @media only screen and (min-width: 510px) {
   .card-main{

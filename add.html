@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Toevoegen</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <script src="./js.js" defer></script>
-    </head>
-<body class="achtergrond">
-    <form action="" id="toevoegen">
-        <h1>Toevoegen</h1>
-        <label>Naam</label><br>
-        <input type="text" maxlength="30" placeholder="Peter.." required><br>
-        <label>Achternaam</label><br>
-        <input type="text" maxlength="40" placeholder="pan.." required><br>
-        <label>email</label><br>
-        <input type="email" placeholder="peterpan@gmail.com" maxlength="60" required><br>
-        <label>korte omschrijving <br> (150 tekens max)</label><br>
-        <input type="text" placeholder="...." maxlength="150" required><br>
-        <label>omschrijving <br> (460 tekens max)</label><br>
-        <input type="text" placeholder="...." maxlength="460" required><br>
-        <label>Foto</label><br>
-        <input type="file" accept="image/*" required><br>
-        <input type="submit">&ensp;<a href="index.html">annuleren</a>
-    </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventplaats</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./js.js" defer></script>
+</head>
+<body id="grid">
+    <header>
+        <div class="menu">
+            <ul class="navmenu">
+                <a href="index.html" class="menu-item">home</a>
+                <a href="moreabt.html" class="menu-item">over ons</a>
+                <a href="add.html" class="menu-item">toevoegen</a>
+                <a href="contact.html" class="menu-item">contact</a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <form>
+            <p>
+                <label for=""><legend> naam: </legend>
+                   <input type="text" required>
+                </label>
+            </p>
+            <p>
+                <label for=""><legend> email: </legend>
+                    <input type="text" required>
+                 </label>
+            </p>
+            <p>
+                 <label for=""><legend> telefoon nummer: </legend>
+                    <input type="tel" required>
+                 </label>
+            </p>
+            <p>
+                <label for=""><legend> telefoon nummer: </legend>
+                   <input type="textarea" required>
+                </label>
+           </p>
+           <p>
+            <label for=""><legend> Plaats: </legend>
+               <input type="text" required>
+            </label>
+           </p>
+           <p>
+            <label for=""><legend> datum: </legend>
+               <input type="date" required>
+            </label>
+           </p>
+           <p>
+            <label for=""><legend> tijd: </legend>
+               <input type="time" required>
+            </label>
+           </p>
+           <p>
+            <label for=""><legend> foto: </legend>
+               <input type="file" required>
+            </label>
+       </p>
+        </form>
+    </main>
+    <footer>
+        <b>All rights deserved 2023</b>
+        <p>email</p>
+    </footer>
 </body>
 </html>
