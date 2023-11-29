@@ -17,11 +17,12 @@
   --text-center: center;
 }
 
-body, html{
+body{
   overflow-x: hidden;
   font-family: 'Gabarito', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Slab', serif;
+  overflow-y: auto;
   min-height: 100vh;
   margin: 0;
 }
