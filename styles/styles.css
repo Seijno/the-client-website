@@ -108,8 +108,14 @@ article{
   flex-direction: column;
   max-width: 500px;
   margin-bottom: 1.5rem;
-  
+  margin-top: 2em;
+  transition: 0.3s;
 }
+article:hover{
+  box-shadow: 1em 1em 1em 1em rgba(179, 179, 179, 0.596);
+  transition: 0.5s;
+}
+
 .articleButton{
   margin: 5em;
   padding: 0.3em 1em 0.3em 1em;
@@ -130,7 +136,6 @@ article{
   margin: var(--margin-centered);
   width: 80vw;
   max-width: 400px;
-  margin-top: 2em;
 }
 
 .sideMenu {
@@ -178,9 +183,41 @@ article{
 form{
   margin: var(--margin-centered);
   width: 45vw;
+
+  & p{
+    margin: 5px;
+  }
 }
+.map{
+  margin: var(--margin-centered);
+  width: 300px;
+  height: 450px;
+  margin: auto;
+}
+
+.card-info{
+  width: 100vw;
+  position: relative;
+  background: rgb(224, 223, 223);
+  margin-top: 1rem ;
+
+  & img{
+    width: 100vw;
+    height: 17rem;
+  }
+  & .stats{
+    display: flex;
+  }
+  & .bottom-buttons{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+}
+
 @media only screen and (min-width: 510px) {
-  .card-main{
+  .flex-main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -191,6 +228,18 @@ form{
     display: table-cell;
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .card-info{
+    max-width: 50vw;
+    margin: var(--margin-centered);
+    margin-top: 0.5rem ;
+
+    & img{
+      width: 50vw;
+    }
+    & .tags-stats{
+      width: 50%;
+    }
   }
   .sideMenu{
     max-width: 30vw;
@@ -206,6 +255,14 @@ form{
   }
   form{
     width: 15vw;
+  }
+  .info{
+    display: grid;
+    height: 20vh;
+    margin-top: 10%;
+  }
+  .card-info{
+    width: 50vw;
   }
 }
 

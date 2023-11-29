@@ -40,11 +40,6 @@
                     <input type="tel" required>
                  </label>
             </p>
-            <p>
-                <label for=""><legend> telefoon nummer: </legend>
-                   <input type="textarea" required>
-                </label>
-           </p>
            <p>
             <label for=""><legend> Plaats: </legend>
                <input type="text" required>
@@ -65,11 +60,27 @@
                <input type="file" required>
             </label>
        </p>
+       <p>
+        <label for=""><legend> beschrijving: </legend>
+           <input type="textarea" required>
+           <small>max 500 tekens</small>
+        </label>
+   </p>
+       <p>
+        <label class="tag" for=""><legend> Tags: </legend></p>
+           <p>Muziek<input type="radio" name="tags" value="muziek" required></p>
+           <p>Events<input type="radio" name="tags" value="event" required></p>
+           <p>Hulp gezocht<input type="radio" name="tags" value="hulp-gezocht" required></p>
+           <p>Hulp aanbieden<input type="radio" name="tags" value="hulp-aanbieden" required></p>
+           <p>museum<input type="radio" name="tags" value="museum" required></p>
+        </label>
+   </p>
+       <p><input type="submit" name="verstuur"></p>
         </form>
     </main>
     <footer>
         <b>All rights deserved 2023</b>
-        <p>email</p>
+        <p><a href="#">privacy</a> & <a href="#">policy</a></p>
     </footer>
 </body>
 </html>
