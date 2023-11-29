@@ -176,9 +176,8 @@ article{
 }
 
 form{
-  text-decoration: var(--text-center);
   margin: var(--margin-centered);
-  width: 35vw;
+  width: 45vw;
 }
 @media only screen and (min-width: 510px) {
   .card-main{
@@ -204,6 +203,9 @@ form{
   }
   .about-us{
     max-width: 60vw;
+  }
+  form{
+    width: 15vw;
   }
 }
 
